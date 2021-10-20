@@ -7,7 +7,7 @@ int main() {
 	printf("Numer albumu: %d\n", numerAlbumu);
 
 	printf("zad 2\n");
-	
+
 	int liczbaDoSprawdzenia;
 	printf("Podaj liczbe calkowita: ");
 	scanf_s("%d", &liczbaDoSprawdzenia);
@@ -24,21 +24,45 @@ int main() {
 	float a, b;
 	printf("Podaj dwie liczby zmiennoprzecinkowe: ");
 	scanf_s("%f %f", &a, &b);
-	
+
 	if (a > b) {
-		printf("%f jest wieksza od %f\n", a ,b);
-	}else if (a == b) {
+		printf("%f jest wieksza od %f\n", a, b);
+	}
+	else if (a == b) {
 		printf("%f rowna sie %f\n", a, b);
-	}else {
+	}
+	else {
 		printf("%f jest mniejsza od %f\n", a, b);
 	}
 
 	printf("zad 4 \n");
 	float c, d, e, f, srednia;
 	printf("Wprowadz 4 liczby zmiennoprzecinkowe: ");
-	scanf_s("%f %f %f %f", &c,&d,&e,&f);
+	scanf_s("%f %f %f %f", &c, &d, &e, &f);
 	srednia = (c + d + e + f) / 4;
-	printf("Srednia arytmetyczna liczb %f %f %f %f to %f", c,d,e,f,srednia);
+	printf("Srednia arytmetyczna liczb %f %f %f %f to %f\n", c, d, e, f, srednia);
 
+	printf("zad 5\n");
+	int l1, l2;
+	char dzialanie;
+	printf("Wprowadz dwie liczby oraz symbol dzialania(+,-,*,/)\n");
+	scanf_s("%d %d %c", &l1,&l2,&dzialanie);
+
+	switch (dzialanie){
+	case '+':
+		printf("%d\n", l1+l2);
+		break;
+	case '-':
+		printf("%d\n", l1 - l2);
+		break;
+	case '*':
+		printf("%d\n", l1 * l2);
+		break;
+	case '/':
+		printf("%d\n", l1 / l2);
+		break;
+	default:
+		break;
+	}
 	return 0;
 }
