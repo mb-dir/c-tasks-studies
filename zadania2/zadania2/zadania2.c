@@ -118,6 +118,7 @@ int main() {
 	printf("Srednia punktow to: %f", sredniaPkt);*/
 
 	//zad6
+	/*
 	printf("-----ZAD6-----\n");
 	printf("");
 	for (int i = 1; i <= 100; i++) {
@@ -134,5 +135,50 @@ int main() {
 	printf("\n\n");
 	for (int i = 20; i >= 0; i-=2) {
 		printf("%d ", i);
+	}
+	*/
+
+	//zad 7
+	printf("-----ZAD7-----\n");
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10-i; j++) {
+			printf("X");
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10 - i; j++) {
+			printf(" ");
+		}
+		for (int j = 0; j <= i; j++) {
+			printf("X");
+		}
+		printf("\n");
+	}
+
+	printf("\n\n");
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j <= i; j++) {
+			printf(" ");
+		}
+		for (int j = 0; j < 10 - i; j++) {
+			printf("X");
+		}
+		printf("\n");
+	}
+
+	printf("\n\n");
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10 - i; j++) {
+			printf(" ");
+		}
+		for (int j = 0; j <= i; j++) {
+			printf("XX");
+		}
+		for (int j = 0; j < 10 - i; j++) {
+			printf(" ");
+		}
+		printf("\n");
 	}
 }
