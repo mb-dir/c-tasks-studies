@@ -29,7 +29,7 @@ int main() {
 	printf("\nSuma: %f, srednia: %f, max: %f\n", suma1, srednia1, max1);
 	*/
 	//zad2
-	
+	/*
 	printf("-----ZAD2-----\n");
 	int sumaD = 0;
 	int ileD = 0;
@@ -52,5 +52,50 @@ int main() {
 		
 	}
 	printf("\nSuma liczb dodatnich: %d, ilosc liczb dodatnich: %d, suma liczb niedodatnich: %d, ilosc liczb niedodatnich: %d\n", sumaD, ileD, sumaU, ileU);
-	
+	*/
+
+	//zad3
+	/*
+	printf("-----ZAD3-----\n");
+
+	int n;
+	printf("Podaj n: ");
+	scanf_s("%d", &n);
+	if (n > 0) {
+		int liczba3;
+		int suma3 = 0;
+		for (int i = 0; i < n; i++) {
+			printf("Podaj liczbe: ");
+			scanf_s("%d", &liczba3);
+			if (liczba3%2 == 0) {
+				suma3 += liczba3;
+			}
+		}
+		printf("Suma parzystych liczb tego ciagu: %d", suma3);
+	}
+	else {
+		printf("Niepoprawna wartosc n(n nie jest wieksze od 0)");
+	}*/
+
+	//zad4
+	srand(time(NULL));
+	int n2;
+	printf("Podaj n: ");
+	scanf_s("%d", &n2);
+	if (n2 > 0) {
+		int liczba4;
+		int suma4 = 0;
+		printf("kolejne wyrazy\n");
+		for (int i = 0; i < n2; i++) {
+			liczba4 = rand()% 56 - 10;
+			printf("%d\n", liczba4);
+			if (liczba4 % 2 == 0) {
+				suma4 += liczba4;
+			}
+		}
+		printf("Suma parzystych liczb tego ciagu: %d", suma4);
+	}
+	else {
+		printf("Niepoprawna wartosc n(n nie jest wieksze od 0)");
+	}
 }
