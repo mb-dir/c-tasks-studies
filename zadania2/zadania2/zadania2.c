@@ -29,26 +29,28 @@ int main() {
 	printf("\nSuma: %f, srednia: %f, max: %f\n", suma1, srednia1, max1);
 	*/
 	//zad2
-
+	
 	printf("-----ZAD2-----\n");
-	int sumaP = 0;
-	int ileP = 0;
-	int sumaNP = 0;
-	int ileNP = 0;
+	int sumaD = 0;
+	int ileD = 0;
+	int sumaU = 0;
+	int ileU = 0;
 	int liczba2;
 
 	for (int i = 0; i < 10; i++) {
 		printf("Podaj liczbe: ");
 		scanf_s("%d", &liczba2);
 
-		if (liczba2%2 == 0) {
-			sumaP += liczba2;
-			ileP++;
+		if (liczba2 >= 0) {
+			sumaD += liczba2;
+			ileD++;
 		}
 		else {
-			sumaNP += liczba2;
-			ileNP++;
+			sumaU += liczba2;
+			ileU++;
 		}
+		
 	}
-	printf("\nSuma liczb parzystych: %d, ilosc liczb parzystych: %d, suma liczb nieparzystych: %d, ilosc liczb nieparzystych: %d\n", sumaP, ileP, sumaNP, ileNP);
+	printf("\nSuma liczb dodatnich: %d, ilosc liczb dodatnich: %d, suma liczb niedodatnich: %d, ilosc liczb niedodatnich: %d\n", sumaD, ileD, sumaU, ileU);
+	
 }
