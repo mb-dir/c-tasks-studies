@@ -5,10 +5,9 @@
 
 int main() {
 	//zad1
-	/*float liczba1, suma1 = 0, srednia1 = 0, max1;
-	int i1 = 0;
-
 	printf("-----ZAD1-----\n");
+	float liczba1, suma1 = 0, srednia1 = 0, max1;
+	int i1 = 0;
 	do {
 		printf("Podaj liczbe: ");
 		scanf_s("%f", &liczba1);
@@ -27,9 +26,8 @@ int main() {
 	} while (liczba1 >= 0);
 	srednia1 = suma1 / i1;
 	printf("\nSuma: %f, srednia: %f, max: %f\n", suma1, srednia1, max1);
-	*/
+	
 	//zad2
-	/*
 	printf("-----ZAD2-----\n");
 	int sumaD = 0;
 	int ileD = 0;
@@ -52,10 +50,9 @@ int main() {
 		
 	}
 	printf("\nSuma liczb dodatnich: %d, ilosc liczb dodatnich: %d, suma liczb niedodatnich: %d, ilosc liczb niedodatnich: %d\n", sumaD, ileD, sumaU, ileU);
-	*/
+	
 
 	//zad3
-	/*
 	printf("-----ZAD3-----\n");
 
 	int n;
@@ -75,10 +72,11 @@ int main() {
 	}
 	else {
 		printf("Niepoprawna wartosc n(n nie jest wieksze od 0)");
-	}*/
+	}
 
-	//zad4
-	/*
+	//zad 4
+	printf("\n-----ZAD4-----\n");
+	
 	srand(time(NULL));
 	int n2;
 	printf("Podaj n: ");
@@ -98,10 +96,11 @@ int main() {
 	}
 	else {
 		printf("Niepoprawna wartosc n(n nie jest wieksze od 0)");
-	}*/
+	}
 
-	//zad5
-	/*
+	//zad 5
+	printf("\n-----ZAD5-----\n");
+	
 	int n3, j = 0, pkt;
 	float sredniaPkt, sumaPkt = 0;
 	printf("Podaj n: ");
@@ -115,11 +114,10 @@ int main() {
 	}
 	printf("%d", sumaPkt);
 	sredniaPkt = sumaPkt / n3;
-	printf("Srednia punktow to: %f", sredniaPkt);*/
+	printf("Srednia punktow to: %f", sredniaPkt);
 
-	//zad6
-	/*
-	printf("-----ZAD6-----\n");
+	//zad 6
+	printf("\n-----ZAD6-----\n");
 	printf("");
 	for (int i = 1; i <= 100; i++) {
 		printf("%d ", i);
@@ -136,10 +134,10 @@ int main() {
 	for (int i = 20; i >= 0; i-=2) {
 		printf("%d ", i);
 	}
-	*/
+	
 
 	//zad 7
-	printf("-----ZAD7-----\n");
+	printf("\n-----ZAD7-----\n");
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10-i; j++) {
 			printf("X");
