@@ -6,7 +6,7 @@
 int main() {
 	//zad1
 	/*float liczba1, suma1 = 0, srednia1 = 0, max1;
-	int i = 0;
+	int i1 = 0;
 
 	printf("-----ZAD1-----\n");
 	do {
@@ -15,17 +15,17 @@ int main() {
 		
 		//zakladam, ze liczba ujemna nie ma byc brana pod uwage w obliczeniach
 		if (liczba1 >=0) {
-			if (i == 0) {
+			if (i1 == 0) {
 				max1 = liczba1;
 			}
 			else if (liczba1 > max1) {
 				max1 = liczba1;
 			}
 			suma1 += liczba1;
-			i++;
+			i1++;
 		}
 	} while (liczba1 >= 0);
-	srednia1 = suma1 / i;
+	srednia1 = suma1 / i1;
 	printf("\nSuma: %f, srednia: %f, max: %f\n", suma1, srednia1, max1);
 	*/
 	//zad2
@@ -78,6 +78,7 @@ int main() {
 	}*/
 
 	//zad4
+	/*
 	srand(time(NULL));
 	int n2;
 	printf("Podaj n: ");
@@ -97,5 +98,41 @@ int main() {
 	}
 	else {
 		printf("Niepoprawna wartosc n(n nie jest wieksze od 0)");
+	}*/
+
+	//zad5
+	/*
+	int n3, j = 0, pkt;
+	float sredniaPkt, sumaPkt = 0;
+	printf("Podaj n: ");
+	scanf_s("%d", &n3);
+
+	while (j < n3) {
+		printf("Podaj punkty dla ucznia nr %d: ", j+1);
+		scanf_s("%d", &pkt);
+		sumaPkt += pkt;
+		j++;
+	}
+	printf("%d", sumaPkt);
+	sredniaPkt = sumaPkt / n3;
+	printf("Srednia punktow to: %f", sredniaPkt);*/
+
+	//zad6
+	printf("-----ZAD6-----\n");
+	printf("");
+	for (int i = 1; i <= 100; i++) {
+		printf("%d ", i);
+	}
+	printf("\n\n");
+	for (int i = 100; i >= 1; i--) {
+		printf("%d ", i);
+	}
+	printf("\n\n");
+	for (int i = 7; i <=77; i+=7) {
+		printf("%d ", i);
+	}
+	printf("\n\n");
+	for (int i = 20; i >= 0; i-=2) {
+		printf("%d ", i);
 	}
 }
