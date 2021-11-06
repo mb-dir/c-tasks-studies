@@ -112,7 +112,6 @@ int main() {
 		sumaPkt += pkt;
 		j++;
 	}
-	printf("%d", sumaPkt);
 	sredniaPkt = sumaPkt / n3;
 	printf("Srednia punktow to: %f", sredniaPkt);
 
@@ -123,7 +122,7 @@ int main() {
 		printf("%d ", i);
 	}
 	printf("\n\n");
-	for (int i = 100; i >= 1; i--) {
+	for (int i = 100; i >= 0; i--) {
 		printf("%d ", i);
 	}
 	printf("\n\n");
