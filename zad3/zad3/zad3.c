@@ -99,4 +99,37 @@ int main()
 		}
 	}
 	printf("suma glownej przekatnej: %d", suma);
+
+	printf("\n\n--ZAD8--\n");
+
+	int A[5][5] = { 1,2,3,4,5,6,7,1,1,1,1,1,1,9,1,1,1,1,2,2,2,2,2,5,6 };
+	int B[5][5] = { 1,1,2 };//pozostale elementy to 0
+	int C[5][5] = { 0 };
+
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			C[i][j] = A[i][j] + B[i][j];
+		}
+	}
+	printf("MACIERZ A: \n");
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			printf("%d ", A[i][j]);
+		}
+		printf("\n");
+	}
+	printf("MACIERZ B: \n");
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			printf("%d ", B[i][j]);
+		}
+		printf("\n");
+	}
+	printf("MACIERZ C(A+B): \n");
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			printf("%d ", C[i][j]);
+		}
+		printf("\n");
+	}
 }
