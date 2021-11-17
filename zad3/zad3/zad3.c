@@ -70,4 +70,14 @@ int main()
 	for (int i = 0; i < 10; i++) {
 		printf("%d ", tab5[i]);
 	}
+
+	printf("\n\n--ZAD6--\n");
+	int tab6[20] = { 1,2,3,4,12125,6,7,8,9,10 };
+	for (int i = 10; i < 20; i++) {
+		tab6[i] = tab6[i-10];
+	}
+
+	for (int i = 0; i < 20; i++) {
+		printf("%d ", tab6[i]);
+	}
 }
