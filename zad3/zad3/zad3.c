@@ -35,4 +35,25 @@ int main()
 		tab3[i] = a - j;
 		printf("%d\n", tab3[i]);
 	}
+
+	printf("\n--ZAD4--\n");
+	int tab4[10];
+	srand(time(NULL));
+
+	for (int i = 0; i < 10; i++) {
+		int liczba = rand() % 74 - 23;
+		tab4[i] = liczba;
+	}
+	printf("\n ---wygenerowana tablica ---\n");
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", tab4[i]);
+	}
+
+	int min = tab4[0];
+	for (int i = 1; i < 10; i++) {
+		if (tab4[i] < min) {
+			min = tab4[i];
+		}
+	}
+	printf("\nminimalna wartosc: %d", min);
 }
