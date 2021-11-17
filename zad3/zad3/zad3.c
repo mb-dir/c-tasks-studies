@@ -24,4 +24,15 @@ int main()
 			printf("%d\n", tab2[i]);
 		}
 	}
+
+	printf("\n--ZAD3--\n");
+	int a;
+	int tab3[10];
+	printf("podaj a: ");
+	scanf_s("%d", &a);
+
+	for (int i = 9, j = 0; i >= 0; i--, j += 5) {
+		tab3[i] = a - j;
+		printf("%d\n", tab3[i]);
+	}
 }
