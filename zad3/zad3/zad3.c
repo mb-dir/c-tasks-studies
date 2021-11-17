@@ -80,4 +80,23 @@ int main()
 	for (int i = 0; i < 20; i++) {
 		printf("%d ", tab6[i]);
 	}
+
+	printf("\n\n--ZAD7--\n");
+	int tab7[5][5] = { 1,2,3,4,5,6,7,1,1,1,1,1,1,9,1,1,1,1,2,2,2,2,2,5,6 };
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			printf("%d ", tab7[i][j]);
+		}
+		printf("\n");
+	}
+
+	int suma = 0;
+	for (int i = 0; i < 5; i++) {//wiersze
+		for (int j = 0; j < 5; j++) {//kolumny
+			if (i == j) {
+				suma += tab7[i][j];
+			}
+		}
+	}
+	printf("suma glownej przekatnej: %d", suma);
 }
