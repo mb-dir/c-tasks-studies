@@ -56,4 +56,18 @@ int main()
 		}
 	}
 	printf("\nminimalna wartosc: %d", min);
+
+	printf("\n\n--ZAD5--\n");
+	int tab5[10];
+	int c, d;
+	printf("Podaj dwa pierwsze elementy: \n");
+	scanf_s("%d %d", &c, &d);
+	tab5[0] = c;
+	tab5[1] = d;
+	for (int i = 2; i < 10; i++) {
+		tab5[i] = tab5[i - 2] + tab5[i - 1];
+	}
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", tab5[i]);
+	}
 }
