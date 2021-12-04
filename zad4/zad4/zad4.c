@@ -43,4 +43,22 @@ int main()
 		}
 		printf("%c - %d\n", i, i);
 	}
+
+	//zad3
+	//samogłoski: A, E, I, U, Y, O
+	char t3[123];
+	printf("Wprowadz slowo: ");
+	gets(t3);
+	int samogloski = 0;
+	int wspolgloski = 0;
+	for (int i = 0; i < strlen(t3); i++) {
+		if (t3[i] == 'a' || t3[i] == 'e' || t3[i] == 'i' || t3[i] == 'u' || t3[i] == 'y' || t3[i] == 'o') {
+			samogloski++;
+		}
+		else {
+			wspolgloski++;
+		}
+	}
+	printf("wyraz %s sklada sie z %d samoglosek i %d wspolglosek", t3,samogloski, wspolgloski);
+
 }
