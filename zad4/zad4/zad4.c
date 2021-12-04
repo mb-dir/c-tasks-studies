@@ -70,4 +70,41 @@ int main()
 	for (int i = strlen(t4); i >= 0; i--) {
 		printf("%c", t4[i]);
 	}
+
+	//zad5
+	char t5[123];
+	printf("Podaj lcizbe: ");
+	gets(t5);
+	for (int i = 0; i < strlen(t5); i++) {
+		if (t5[i] == 48) {
+			printf("zero ");
+		}
+		else if (t5[i] == 49) {
+			printf("jeden ");
+		}
+		else if (t5[i] == 50) {
+			printf("dwa ");
+		}
+		else if (t5[i] == 51) {
+			printf("trzy ");
+		}
+		else if (t5[i] == 52) {
+			printf("cztery ");
+		}
+		else if (t5[i] == 53) {
+			printf("piec ");
+		}
+		else if (t5[i] == 54) {
+			printf("szesc ");
+		}
+		else if (t5[i] == 55) {
+			printf("siedem ");
+		}
+		else if (t5[i] == 56) {
+			printf("osem ");
+		}
+		else if (t5[i] == 57) {
+			printf("dziewiec ");
+		}
+	}
 }
