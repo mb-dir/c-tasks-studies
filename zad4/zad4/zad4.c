@@ -61,4 +61,13 @@ int main()
 	}
 	printf("wyraz %s sklada sie z %d samoglosek i %d wspolglosek", t3,samogloski, wspolgloski);
 
+	//zad 4
+
+	char t4[123];
+	printf("Podaj wyraz: ");
+	gets(t4);
+	_strupr(t4);
+	for (int i = strlen(t4); i >= 0; i--) {
+		printf("%c", t4[i]);
+	}
 }
