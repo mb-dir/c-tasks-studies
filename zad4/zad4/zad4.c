@@ -5,10 +5,7 @@
 
 int indexLitery(char wyraz[123], char litera) {
 	for (int i = 0; i < strlen(wyraz); i++) {
-		printf("%c ", wyraz[i]);
-		printf("%c \n", litera);
 		if (wyraz[i] == litera) {
-
 			return i;
 		}
 	}
@@ -121,16 +118,18 @@ int main()
 	//	}
 	//}
 
-	char t[123] = "dupa";
-	int index = indexLitery(t, 'u');
-	printf("%d", index);
+	
 
-	/*char s1[27] = "abcdefghijklmnopqrstuvwxyz";
+	char s1[27] = "abcdefghijklmnopqrstuvwxyz";
 	char s2[27] = "zyxwvutsrqponmlkjihgfedcba";
 	char s3[123];
 	printf("Podaj wyraz: ");
 	gets(s3);
 	for (int i = 0; i < strlen(s1); i++) {
-		
-	}*/
+		int index = indexLitery(s1, s3[i]);
+		if (index != -1) {
+			s3[i] = s2[i];
+		}
+	}
+	printf_s(s3);
 }
