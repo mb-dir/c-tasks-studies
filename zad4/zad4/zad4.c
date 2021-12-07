@@ -125,10 +125,10 @@ int main()
 	char s3[123];
 	printf("Podaj wyraz: ");
 	gets(s3);
-	for (int i = 0; i < strlen(s1); i++) {
+	for (int i = 0; i < strlen(s3); i++) {
 		int index = indexLitery(s1, s3[i]);
 		if (index != -1) {
-			s3[i] = s2[i];
+			s3[i] = s2[index];
 		}
 	}
 	printf_s(s3);
