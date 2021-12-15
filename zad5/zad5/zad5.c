@@ -10,6 +10,6 @@
 
 int main()
 {
-    printf("%f", kula(-2, M_PI));
+    printf("%f", prostopadloscian(2, 7, 14));
 }
 

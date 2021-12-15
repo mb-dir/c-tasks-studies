@@ -17,3 +17,18 @@ float kula(float r, float pi) {
 	}
 	return (4 / 3) * pi * r * r * r;
 }
+
+float prostokat(float a, float b) {
+	if (a < 0 || b < 0) {
+		error();
+		return 0;
+	}
+	return a * b;
+}
+float prostopadloscian(float a, float b, float c) {
+	if (a < 0 || b < 0 || c < 0) {
+		error();
+		return 0;
+	}
+	return a * b * c;
+}
