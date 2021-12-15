@@ -10,6 +10,6 @@
 
 int main()
 {
-    printf("%f", trojkat(12, 4));
+    printf("%f", walec(2, 2, M_PI));
 }
 

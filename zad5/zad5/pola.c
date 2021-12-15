@@ -40,3 +40,19 @@ float trojkat(float a, float h) {
 	}
 	return(a * h) / 2;
 }
+
+float szescian(float a) {
+	if (a < 0) {
+		error();
+		return 0;
+	}
+	return a*a*a;
+}
+
+float walec(float r, float H, float pi) {
+	if (r < 0 || H < 0 || pi < 0) {
+		error();
+		return 0;
+	}
+	return pi*r*r*H;
+}
