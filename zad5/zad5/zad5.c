@@ -3,12 +3,13 @@
 #include <time.h>
 #include <Windows.h>
 #include <string.h>
-#include "test.h"
+#include "pola.h"
 
-//funkcje
+#define M_PI 3.14159265358979323846
+
 
 int main()
 {
-    printf("%d", suma(41,6));
+    printf("%f", kula(2, M_PI));
 }
 
