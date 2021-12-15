@@ -32,3 +32,11 @@ float prostopadloscian(float a, float b, float c) {
 	}
 	return a * b * c;
 }
+
+float trojkat(float a, float h) {
+	if (a < 0 || h < 0) {
+		error();
+		return 0;
+	}
+	return(a * h) / 2;
+}

@@ -10,6 +10,6 @@
 
 int main()
 {
-    printf("%f", prostopadloscian(2, 7, 14));
+    printf("%f", trojkat(12, 4));
 }
 

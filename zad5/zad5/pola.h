@@ -7,3 +7,5 @@ float kula(float r, float pi);
 
 float prostokat(float a, float b);
 float prostopadloscian(float a, float b, float c);
+
+float trojkat(float a, float h);
