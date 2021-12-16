@@ -4,8 +4,11 @@
 int fib(int a);
 
 int main() {
-	int value = fib(6);
-	printf("%d", value);
+	int a;
+	printf("Numer elementu ciagu fibinacciego: ");
+	scanf_s("%d", &a);
+	int value = fib(a);
+	printf("%d element ciagu to: %d", a, value);
 	return 0;
 }
 
