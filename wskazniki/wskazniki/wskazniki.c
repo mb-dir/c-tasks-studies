@@ -83,7 +83,7 @@ int main() {
 	arr = NULL;*/
 
 	//zad3
-	int n;
+	/*int n;
 	float srednia = 0;
 	int sumaElTab = 0;
 	int* arr = NULL;
@@ -115,6 +115,16 @@ int main() {
 	}
 
 	free(arr);
-	arr = NULL;
+	arr = NULL;*/
+
+	//zad4
+	
+	int a;
+	printf("Podaj liczbe: ");
+	scanf_s("%d", &a);
+	
+	zad4(&a);
+	printf("%d", a);
+	
 	return 0;
 }
