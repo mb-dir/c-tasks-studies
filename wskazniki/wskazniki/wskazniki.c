@@ -45,7 +45,7 @@ int main() {
 
 	
 	//zad2
-	int n;
+	/*int n;
 	int* arr = NULL;
 
 	printf("Podaj n(wielkosc tablicy): ");
@@ -75,6 +75,41 @@ int main() {
 		}
 
 		for (int i = 0; i < n; i++) {
+			printf("%d ", arr[i]);
+		}
+	}
+
+	free(arr);
+	arr = NULL;*/
+
+	//zad3
+	int n;
+	float srednia = 0;
+	int sumaElTab = 0;
+	int* arr = NULL;
+
+	printf("Podaj n(wielkosc tablicy): ");
+	scanf_s("%d", &n);
+
+	arr = malloc(sizeof(int) * n);
+
+	for (int i = 0; i < n; i++) {
+		arr[i] = 0;
+	}
+
+	for (int i = 0; i < n; i++) {
+		int x;
+		printf("Podaj wartosc: ");
+		scanf_s("%d", &x);
+		arr[i] = x;
+		sumaElTab += x;
+	}
+
+	srednia = sumaElTab / n;
+	printf("srednia: %f\n", srednia);
+	printf("Elementy wieksze od sredniej: \n");
+	for (int i = 0; i < n; i++) {
+		if(arr[i] > srednia){
 			printf("%d ", arr[i]);
 		}
 	}
