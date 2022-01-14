@@ -145,13 +145,22 @@ int main() {
 	printf("\nNowa wartosc a: %d", a);*/
 
 	//zad7
-	int a, b;
+	/*int a, b;
 	int arr[2];
 	printf("Podaj dwie liczby: ");
 	scanf_s("%d %d", &a,&b);
 	zad7(&a, &b, &arr);
 
 
-	printf("mniejsza wartosc: %d, wskaznik na mniejsza wartosc: %d", arr[0], arr[1]);
+	printf("mniejsza wartosc: %d, wskaznik na mniejsza wartosc: %d", arr[0], arr[1]);*/
+
+	//zad8
+	int a, b;
+
+	printf("Podaj wartosci: ");
+	scanf_s("%d %d", &a, &b);
+	printf("Przed zamiana a: %d, b: %d", a, b);
+	zad8(&a,&b);
+	printf("\nPo zamianie a: %d, b: %d", a, b);
 
 }
