@@ -129,9 +129,18 @@ int main() {
 	return 0;*/
 
 	//zad5
-	int a, b;
+	/*int a, b;
 	printf("Podaj podstawe oraz wykladnik: ");
 	scanf_s("%d %d", &a, &b);
 	int* ptr = zad5(&a, &b);
-	printf("%d", *ptr);
+	printf("%d", *ptr);*/
+
+	//zad6
+	int a;
+	char z;
+	printf("Podaj znak oraz ilosc powtorzen: ");
+	scanf_s("%c", &z);
+	scanf_s("%d", &a);
+	zad6(&z, &a);
+	printf("\nNowa wartosc a: %d", a);
 }
