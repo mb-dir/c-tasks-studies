@@ -136,11 +136,22 @@ int main() {
 	printf("%d", *ptr);*/
 
 	//zad6
-	int a;
+	/*int a;
 	char z;
 	printf("Podaj znak oraz ilosc powtorzen: ");
 	scanf_s("%c", &z);
 	scanf_s("%d", &a);
 	zad6(&z, &a);
-	printf("\nNowa wartosc a: %d", a);
+	printf("\nNowa wartosc a: %d", a);*/
+
+	//zad7
+	int a, b;
+	int arr[2];
+	printf("Podaj dwie liczby: ");
+	scanf_s("%d %d", &a,&b);
+	zad7(&a, &b, &arr);
+
+
+	printf("mniejsza wartosc: %d, wskaznik na mniejsza wartosc: %d", arr[0], arr[1]);
+
 }
