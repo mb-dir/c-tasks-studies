@@ -119,12 +119,19 @@ int main() {
 
 	//zad4
 	
-	int a;
+	/*int a;
 	printf("Podaj liczbe: ");
 	scanf_s("%d", &a);
 	
 	zad4(&a);
 	printf("%d", a);
 	
-	return 0;
+	return 0;*/
+
+	//zad5
+	int a, b;
+	printf("Podaj podstawe oraz wykladnik: ");
+	scanf_s("%d %d", &a, &b);
+	int* ptr = zad5(&a, &b);
+	printf("%d", *ptr);
 }

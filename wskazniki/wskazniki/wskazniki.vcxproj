@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="wskazniki.c" />
     <ClCompile Include="zad4.c" />
+    <ClCompile Include="zad5.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="zad4.h" />
+    <ClInclude Include="zad5.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
