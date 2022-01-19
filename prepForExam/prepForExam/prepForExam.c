@@ -14,7 +14,7 @@ int main() {
 	}*/
 
 	//Draw christmas tree
-	for (int i = 0; i < 10; i++) {
+	/*for (int i = 0; i < 10; i++) {
 		for (int j = 10; j > i; j--) {
 			printf(" ");
 		}
@@ -25,7 +25,10 @@ int main() {
 			printf(" ");
 		}
 		printf("\n");
-	}
+	}*/
 
+	int a=12;
+	int* ptrA = &a;
+	printf("%d %d %d", a, *ptrA, ptrA);
 	return 0;
 }
