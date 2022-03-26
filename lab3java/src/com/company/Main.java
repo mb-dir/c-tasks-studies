@@ -20,7 +20,9 @@ public class Main {
         //zad3
         //zad3();
 
-        zad4();
+        //zad4();
+
+        zad5();
     }
 
     public static void zad1(int n){
@@ -93,5 +95,24 @@ public class Main {
             }
         }
         System.out.println("Suma parzystych wyrazów to: " + sumaP);
+    }
+
+    public static void zad5(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podan wyraz");
+        String n = in.next();
+
+        boolean czyPalindrom = true;
+        for(int i = 0; i < n.length()/2; i++){
+            if(n.charAt(i) != n.charAt(n.length()-i-1)){
+                czyPalindrom = false;
+                break;
+            }
+        }
+        if(czyPalindrom){
+            System.out.println("Tak");
+        }else{
+            System.out.println("Nie");
+        }
     }
 }
