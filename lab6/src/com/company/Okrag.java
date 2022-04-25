@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class Okrag {
+public class Okrag extends Figura{
     Punkt srodek;
     double r;
 
@@ -11,6 +11,12 @@ public class Okrag {
     }
 
     public Okrag(Punkt srodek, double r) {
+        this.srodek = srodek;
+        this.r = r;
+    }
+
+    public Okrag(Punkt srodek, double r, String kolor) {
+        super(kolor);
         this.srodek = srodek;
         this.r = r;
     }
@@ -43,5 +49,10 @@ public class Okrag {
         }else{
             System.out.println("Punkt nie należy do okręgu");
         }
+    }
+
+    @Override
+    String opis() {
+        return "Klasa Okrąg. Kolor obiektu: "+super.getKolor();
     }
 }
