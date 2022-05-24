@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws BlednaWartoscDlaSilniException {
+    public static void main(String[] args) throws BlednaWartoscDlaSilniException, NieprawidlowyAdresException {
         Scanner in  = new Scanner(System.in);
         //zad1
         System.out.println("Podaj liczbe");
@@ -21,7 +21,11 @@ public class Main {
         }
 
         //zad2
-        System.out.println(silnia(-6));
+        System.out.println(silnia(6));
+
+
+        //zad3
+        Adres adres = new Adres("null", "null", "12313", 0);
     }
 
 
