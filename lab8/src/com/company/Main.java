@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BlednaWartoscDlaSilniException {
         Scanner in  = new Scanner(System.in);
         //zad1
         System.out.println("Podaj liczbe");
@@ -18,6 +18,22 @@ public class Main {
             }
         }catch (InputMismatchException e){
             System.out.println("Nie podałeś liczby");
+        }
+
+        //zad2
+        System.out.println(silnia(-6));
+    }
+
+
+    //zad2 - wymagana metoda
+    public static int silnia(int n) throws BlednaWartoscDlaSilniException{
+        if(n<0){
+            throw new BlednaWartoscDlaSilniException("Silnia jest zdefiniowana dla n>=0");
+        }
+        if(n == 0){
+            return 1;
+        }else{
+            return n*silnia(n-1);
         }
     }
 }
